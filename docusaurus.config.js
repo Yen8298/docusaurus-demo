@@ -233,25 +233,4 @@ const config = {
       hideableSidebar: true,
     }),
 
-  plugins: [
-    'docusaurus-plugin-sass',
-    'docusaurus-plugin-image-zoom',
-    [
-      '@docusaurus/plugin-client-redirects',
-      // highlight-start
-      {
-        fromExtensions: ['html', 'htm'], // /myPage.html -> /myPage
-        redirects: [
-          // Redirect from multiple old paths to the new path
-          {
-            to: '/docs/katalon-studio-enterprise/release-notes/version-8.x',
-            from: ['/katalon-studio/new/version-8x.html'],
-          },
-        ],
-      },
-      // highlight-end
-    ],
-  ],
-};
-
 module.exports = config;
