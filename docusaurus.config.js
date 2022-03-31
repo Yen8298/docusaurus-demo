@@ -241,6 +241,13 @@ const config = {
       // highlight-start
       {
         fromExtensions: ['html', 'htm'], // /myPage.html -> /myPage
+        redirects: [
+          // Redirect from multiple old paths to the new path
+          {
+            to: '/docs/newDoc2',
+            from: ['/docs/katalon-studio-enterprise/release-notes/version-8.x', '/katalon-studio/new/version-8x.html'],
+          },
+        ],
         createRedirects(existingPath) {
           if (existingPath.includes('.html')) {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
