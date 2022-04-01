@@ -242,7 +242,7 @@ const config = {
       {
         redirects: [
           // Redirect from multiple old paths to the new path
-          {to: '/katalon-studio-enterprise/release-notes/version-8.x', from: ['/katalon-studio/new/version-8x.html', '/docs/legacyDocFrom2016'],},
+          {to: '/docs/katalon-studio-enterprise/release-notes/version-8.x', from: ['/katalon-studio/new/version-8x.html', '/docs/legacyDocFrom2016'],},
         ],
       },
       // highlight-end
