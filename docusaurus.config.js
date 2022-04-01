@@ -240,7 +240,6 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       // highlight-start
       {
-        fromExtensions: ['html', 'htm'], // /myPage.html -> /myPage
         redirects: [
           // Redirect from multiple old paths to the new path
           {
@@ -248,15 +247,6 @@ const config = {
             from: '/katalon-studio/new/version-8x.html',
           },
         ],
-        createRedirects(existingPath) {
-          if (existingPath.includes('.html')) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-            return [
-              existingPath.replace('', '.html'),
-            ];
-          }
-          return undefined; // Return a falsy value: no redirect created
-        },
       },
       // highlight-end
     ],
