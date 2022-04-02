@@ -242,7 +242,7 @@ const config = {
       {
         redirects: [
           // Redirect from multiple old paths to the new path
-          {to: '/docs/create-tests-and-projects/configure-test-cases/desired-capabilities/set-up-desired-capabilities-in-windows-desktop-app-testing', from: ['/katalon-studio/new/version-8x.html', '/docs/legacyDocFrom2016'],},
+          {to: "/docs/create-tests-and-projects/configure-test-cases/desired-capabilities/set-up-desired-capabilities-in-windows-desktop-app-testing", from: ["/katalon-studio/new/version-8x.html", "/docs/legacyDocFrom2016"],},
         ],
       },
       // highlight-end
